@@ -1,0 +1,14 @@
+{
+  "name": "number-tools",
+  "version": "0.0.1",
+  "description": "a number tools for javascript",
+  "main": "index.js",
+  "scripts": {},
+  "repository": "https://github.com/LiquorZz/number-tools.git",
+  "author": "mao xiangming<maoxiangmingcn@163.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  }
+}

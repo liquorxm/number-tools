@@ -1,0 +1,4 @@
+**/*.d.ts
+/src/templates/**
+node_modules/
+.eslintrc.js
