@@ -1,13 +1,14 @@
 {
   "name": "number-tools",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a number tools for javascript",
   "main": "./dist/index.js",
   "scripts": {
     "build": "webpack  --config config/webpack.config.js",
     "test": "yarn clean && tsc && mocha --require intelli-espower-loader",
     "clean": "rm -rf dist",
-    "prepublish": "yarn run clean && tsc"
+    "release": "yarn run clean && tsc",
+    "_prepublish": "yarn run release"
   },
   "repository": "https://github.com/liquorxm/number-tools.git",
   "author": "mao xiangming<maoxiangmingcn@163.com>",
@@ -30,6 +31,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.19",
-    "number-tools": "^0.0.1"
+    "moment": "^2.27.0",
+    "number-tools": "^0.0.2"
   }
 }
