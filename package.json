@@ -1,14 +1,35 @@
 {
   "name": "number-tools",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a number tools for javascript",
-  "main": "index.js",
-  "scripts": {},
-  "repository": "https://github.com/LiquorZz/number-tools.git",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "webpack  --config config/webpack.config.js",
+    "test": "yarn clean && tsc && mocha --require intelli-espower-loader",
+    "clean": "rm -rf dist",
+    "prepublish": "yarn run clean && tsc"
+  },
+  "repository": "https://github.com/liquorxm/number-tools.git",
   "author": "mao xiangming<maoxiangmingcn@163.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/lodash": "^4.14.159",
+    "@types/mocha": "^8.0.1",
+    "@types/power-assert": "^1.5.3",
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/parser": "^3.8.0",
+    "eslint": "^7.6.0",
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^8.1.1",
+    "power-assert": "^1.6.1",
+    "ts-loader": "^8.0.2",
     "ts-node": "^8.10.2",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "lodash": "^4.17.19",
+    "number-tools": "^0.0.1"
   }
 }
