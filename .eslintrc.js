@@ -3,11 +3,11 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react/recommended'
+    'plugin:@typescript-eslint/recommended'
   ],
   env: {
     node: true,
+    browser: true,
   },
   parserOptions: {
     ecmaFeatures: {
@@ -18,6 +18,7 @@ module.exports = {
   },
   rules: {
     'prefer-const': 1,
-    '@typescript-eslint/explicit-module-boundary-types': 0
+    '@typescript-eslint/explicit-module-boundary-types': 0,
+    'no-const-assign': 1,
   },
 }

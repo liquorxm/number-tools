@@ -1,6 +1,6 @@
 {
   "name": "number-tools",
-  "version": "0.0.3-beta0.2",
+  "version": "0.0.3-beta0.1",
   "description": "a number tools for javascript",
   "main": "./dist/index.js",
   "scripts": {
@@ -8,9 +8,12 @@
     "test": "yarn clean && tsc && mocha --require intelli-espower-loader",
     "clean": "rm -rf dist",
     "release": "yarn run clean && tsc",
-    "prepare": "yarn run release"
+    "prepublishOnly": "yarn run release"
   },
-  "repository": "https://github.com/liquorxm/number-tools.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liquorxm/number-tools.git"
+  },
   "author": "mao xiangming<maoxiangmingcn@163.com>",
   "license": "MIT",
   "devDependencies": {
@@ -33,5 +36,8 @@
     "lodash": "^4.17.19",
     "moment": "^2.27.0",
     "number-tools": "^0.0.3-beta0.1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }

@@ -1,0 +1,31 @@
+.idea/
+.gitignore
+.prettierrc
+.travis.yml
+Makefile
+node_modules/
+.DS_Store
+CONTRIBUTE.md
+
+# source
+# **/*.ts
+# *.ts
+/test
+/dist/test
+/src
+index.ts
+
+# definitions
+# !**/*.d.ts
+# !*.d.ts
+
+# configuration
+tsconfig.json
+tslint.json
+/.vscode
+.prettierignore
+.editorconfig
+.eslintignore
+.eslintrc.js
+config
+temp.ts
