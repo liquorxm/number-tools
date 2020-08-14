@@ -1,6 +1,6 @@
 {
   "name": "number-tools",
-  "version": "0.0.3",
+  "version": "0.0.3-beta0.1",
   "description": "a number tools for javascript",
   "main": "./dist/index.js",
   "scripts": {
@@ -32,6 +32,6 @@
   "dependencies": {
     "lodash": "^4.17.19",
     "moment": "^2.27.0",
-    "number-tools": "^0.0.2"
+    "number-tools": "^0.0.3"
   }
 }
